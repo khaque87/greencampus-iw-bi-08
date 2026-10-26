@@ -1,0 +1,16 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}Objetivos de Desarrollo Sostenible{% endblock %}
+
+{% block encabezado %}Objetivos de Desarrollo Sostenible{% endblock %}
+
+{% block cuerpo %}
+<ul>
+    {% for ods in ods_list %}
+    <li>
+        <a href="{% url 'campus:ods_detail' ods.pk %}">ODS {{ ods.numero }}. {{ ods.nombre }}</a>
+        ({{ ods.iniciativas.count }} iniciativas)
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

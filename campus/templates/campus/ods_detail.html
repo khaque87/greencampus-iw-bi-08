@@ -1,0 +1,18 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}ODS {{ ods.numero }}{% endblock %}
+
+{% block encabezado %}ODS {{ ods.numero }}. {{ ods.nombre }}{% endblock %}
+
+{% block cuerpo %}
+<p>{{ ods.descripcion }}</p>
+
+<h2>Iniciativas asociadas</h2>
+<ul>
+    {% for iniciativa in ods.iniciativas.all %}
+    <li><a href="{% url 'campus:iniciativa_detail' iniciativa.pk %}">{{ iniciativa.titulo }}</a></li>
+    {% empty %}
+    <li>Este ODS aún no tiene iniciativas.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
