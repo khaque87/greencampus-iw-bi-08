@@ -1,0 +1,34 @@
+{% load static %}<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block titulo %}Inicio{% endblock %} | Green Campus</title>
+    <link rel="stylesheet" href="{% static 'campus/css/estilos.css' %}">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            <a href="{% url 'campus:portada' %}" class="logo">Green Campus</a>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="{% url 'campus:portada' %}">Inicio</a></li>
+                    <li><a href="{% url 'campus:iniciativa_list' %}">Iniciativas</a></li>
+                    <li><a href="{% url 'campus:ods_list' %}">ODS</a></li>
+                    <li><a href="{% url 'campus:organizacion_list' %}">Organizaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenido-principal">
+        {% block contenido %}{% endblock %}
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <p>&copy; 2026 Green Campus - Iniciativas de sostenibilidad universitaria</p>
+        </div>
+    </footer>
+</body>
+</html>
