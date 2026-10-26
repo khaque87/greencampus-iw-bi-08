@@ -9,5 +9,5 @@
 
 #### Registro de uso de IA (Rol I4)
 Tal y como requiere la normativa de la entrega, detallo el uso transparente de herramientas de IA durante mi desarrollo:
-- **Trabajo Manual:** Toda la estructuración semántica (`<main>`, `<article>`, `<section>`), la herencia de las plantillas de Django y las comprobaciones de accesibilidad han sido realizadas manualmente basándome en los apuntes.
-- **Asistencia IA:** He utilizado la IA de forma muy puntual como tutor técnico para dos aspectos operativos: verificar la sintaxis exacta de importación de las vistas genéricas en Python y consultar los comandos de seguridad en GitHub Desktop para realizar un *Update from main* seguro, evitando sobreescribir el trabajo de mis compañeros.
+- **Trabajo Manual (Principal):** Todo el código (la estructuración semántica con `<main>`, `<article>` y `<section>`, la herencia de las plantillas HTML en Django y las comprobaciones de accesibilidad) lo he escrito a mano íntegramente basándome en los apuntes. No se ha utilizado IA para generar la lógica ni los bloques de código.
+- **Asistencia IA (Apoyo puntual):** Únicamente he utilizado la IA a modo de buscador rápido/diccionario para resolver dos dudas muy concretas sin perder tiempo: confirmar la sintaxis exacta para importar las vistas genéricas en Python, y recordar los pasos seguros en GitHub Desktop para actualizar mi rama sin sobreescribir el trabajo de mis compañeros.
