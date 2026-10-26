@@ -1,0 +1,542 @@
+[
+{
+  "model": "campus.ods",
+  "pk": 1,
+  "fields": {
+    "numero": 4,
+    "nombre": "Educacion de calidad",
+    "descripcion": "Garantizar educacion de calidad"
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 2,
+  "fields": {
+    "numero": 1,
+    "nombre": "Fin de la pobreza",
+    "descripcion": "Poner fin a la pobreza en todas sus formas en todo el mundo."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 3,
+  "fields": {
+    "numero": 2,
+    "nombre": "Hambre cero",
+    "descripcion": "Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 4,
+  "fields": {
+    "numero": 3,
+    "nombre": "Salud y bienestar",
+    "descripcion": "Garantizar una vida sana y promover el bienestar para todos en todas las edades."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 5,
+  "fields": {
+    "numero": 5,
+    "nombre": "Igualdad de género",
+    "descripcion": "Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 6,
+  "fields": {
+    "numero": 6,
+    "nombre": "Agua limpia y saneamiento",
+    "descripcion": "Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 7,
+  "fields": {
+    "numero": 7,
+    "nombre": "Energía asequible y no contaminante",
+    "descripcion": "Garantizar el acceso a una energía asequible, segura, sostenible y moderna para todos."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 8,
+  "fields": {
+    "numero": 8,
+    "nombre": "Trabajo decente y crecimiento económico",
+    "descripcion": "Promover el crecimiento económico inclusivo y sostenible, el empleo y el trabajo decente para todos."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 9,
+  "fields": {
+    "numero": 9,
+    "nombre": "Industria, innovación e infraestructura",
+    "descripcion": "Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 10,
+  "fields": {
+    "numero": 10,
+    "nombre": "Reducción de las desigualdades",
+    "descripcion": "Reducir la desigualdad en los países y entre ellos."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 11,
+  "fields": {
+    "numero": 11,
+    "nombre": "Ciudades y comunidades sostenibles",
+    "descripcion": "Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 12,
+  "fields": {
+    "numero": 12,
+    "nombre": "Producción y consumo responsables",
+    "descripcion": "Garantizar modalidades de consumo y producción sostenibles."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 13,
+  "fields": {
+    "numero": 13,
+    "nombre": "Acción por el clima",
+    "descripcion": "Adoptar medidas urgentes para combatir el cambio climático y sus efectos."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 14,
+  "fields": {
+    "numero": 14,
+    "nombre": "Vida submarina",
+    "descripcion": "Conservar y utilizar sosteniblemente los océanos, los mares y los recursos marinos para el desarrollo sostenible."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 15,
+  "fields": {
+    "numero": 15,
+    "nombre": "Vida de ecosistemas terrestres",
+    "descripcion": "Proteger, restablecer y promover el uso sostenible de los ecosistemas terrestres, gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 16,
+  "fields": {
+    "numero": 16,
+    "nombre": "Paz, justicia e instituciones sólidas",
+    "descripcion": "Promover sociedades pacíficas e inclusivas para el desarrollo sostenible, facilitar el acceso a la justicia para todos y construir a todos los niveles instituciones eficaces e inclusivas que rindan cuentas."
+  }
+},
+{
+  "model": "campus.ods",
+  "pk": 17,
+  "fields": {
+    "numero": 17,
+    "nombre": "Alianzas para lograr los objetivos",
+    "descripcion": "Fortalecer los medios de implementación y revitalizar la Alianza Mundial para el Desarrollo Sostenible."
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 1,
+  "fields": {
+    "nombre": "Educación para Todos",
+    "tipo": "ONG",
+    "descripcion": "Organización dedicada a promover la educación.",
+    "web": "https://www.ejemplo.org"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 2,
+  "fields": {
+    "nombre": "EDUONG",
+    "tipo": "ONG",
+    "descripcion": "ONG destinada a apoyar proyectos de educación de calidad para jóvenes y adultos.",
+    "web": null
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 3,
+  "fields": {
+    "nombre": "Horizonte Solidario",
+    "tipo": "ONG",
+    "descripcion": "Organización ficticia dedicada a combatir la pobreza y apoyar a colectivos vulnerables.",
+    "web": "https://www.horizontesolidario.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 4,
+  "fields": {
+    "nombre": "Semillas de Futuro",
+    "tipo": "ONG",
+    "descripcion": "Organización ficticia que promueve la alimentación sostenible y la educación ambiental.",
+    "web": "https://www.semillasdefuturo.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 5,
+  "fields": {
+    "nombre": "Ayuntamiento de Valle Verde",
+    "tipo": "ADMIN_PUBLICA",
+    "descripcion": "Administración local ficticia que impulsa proyectos de sostenibilidad y bienestar ciudadano.",
+    "web": "https://www.valleverde.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 6,
+  "fields": {
+    "nombre": "Agencia Regional de Innovación Social",
+    "tipo": "ADMIN_PUBLICA",
+    "descripcion": "Entidad pública ficticia que fomenta la innovación y el desarrollo social.",
+    "web": "https://www.innovacionsocial.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 7,
+  "fields": {
+    "nombre": "EcoNova Energía",
+    "tipo": "EMPRESA",
+    "descripcion": "Empresa ficticia especializada en energías renovables y eficiencia energética.",
+    "web": "https://www.econova.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 8,
+  "fields": {
+    "nombre": "Circularis Tecnología",
+    "tipo": "EMPRESA",
+    "descripcion": "Empresa ficticia que desarrolla soluciones tecnológicas para la economía circular.",
+    "web": "https://www.circularis.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 9,
+  "fields": {
+    "nombre": "Instituto Superior de Desarrollo Sostenible",
+    "tipo": "UNIVERSIDAD",
+    "descripcion": "Institución académica ficticia dedicada a la investigación y formación en sostenibilidad.",
+    "web": "https://www.desarrollosostenible.example"
+  }
+},
+{
+  "model": "campus.organizacion",
+  "pk": 10,
+  "fields": {
+    "nombre": "Red Ciudadana por el Planeta",
+    "tipo": "OTRO",
+    "descripcion": "Colectivo ficticio que promueve la participación ciudadana y los hábitos responsables.",
+    "web": ""
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 1,
+  "fields": {
+    "titulo": "Programa de alfabetización",
+    "descripcion": "Proyecto para mejorar la alfabetización.",
+    "fecha_inicio": "2026-01-15",
+    "ods": 1,
+    "organizaciones": [
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 2,
+  "fields": {
+    "titulo": "Programa de apoyo a familias vulnerables",
+    "descripcion": "Ofrecer apoyo económico y social a familias en situación de pobreza para mejorar sus condiciones de vida.",
+    "fecha_inicio": "2026-01-15",
+    "ods": 2,
+    "organizaciones": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 3,
+  "fields": {
+    "titulo": "Banco de alimentos comunitario",
+    "descripcion": "Recoger y distribuir alimentos entre personas en situación de vulnerabilidad para reducir el hambre y mejorar la nutrición.",
+    "fecha_inicio": "2026-02-01",
+    "ods": 3,
+    "organizaciones": [
+      3
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 4,
+  "fields": {
+    "titulo": "Campaña de prevención y promoción de la salud",
+    "descripcion": "Organizar actividades de prevención de enfermedades y promoción de hábitos de vida saludables para toda la población.",
+    "fecha_inicio": "2026-02-10",
+    "ods": 4,
+    "organizaciones": [
+      8
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 5,
+  "fields": {
+    "titulo": "Programa de refuerzo educativo",
+    "descripcion": "Ofrecer clases de apoyo gratuitas y recursos educativos a estudiantes con dificultades de aprendizaje.",
+    "fecha_inicio": "2026-02-15",
+    "ods": 1,
+    "organizaciones": [
+      1
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 6,
+  "fields": {
+    "titulo": "Talleres de igualdad de género",
+    "descripcion": "Realizar talleres de sensibilización sobre igualdad de oportunidades y prevención de la discriminación por razón de género.",
+    "fecha_inicio": "2026-03-01",
+    "ods": 5,
+    "organizaciones": [
+      6
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 7,
+  "fields": {
+    "titulo": "Campaña de ahorro y uso responsable del agua",
+    "descripcion": "Promover el ahorro de agua y las buenas prácticas de higiene y saneamiento en hogares y centros educativos.",
+    "fecha_inicio": "2026-03-05",
+    "ods": 6,
+    "organizaciones": [
+      9
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 8,
+  "fields": {
+    "titulo": "Instalación de paneles solares comunitarios",
+    "descripcion": "Impulsar el uso de energía solar mediante la instalación de paneles fotovoltaicos en edificios comunitarios.",
+    "fecha_inicio": "2026-03-10",
+    "ods": 7,
+    "organizaciones": [
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 9,
+  "fields": {
+    "titulo": "Programa de inserción laboral juvenil",
+    "descripcion": "Facilitar el acceso de jóvenes al mercado laboral mediante formación profesional, orientación y prácticas laborales.",
+    "fecha_inicio": "2026-03-15",
+    "ods": 8,
+    "organizaciones": [
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 10,
+  "fields": {
+    "titulo": "Laboratorio de innovación tecnológica",
+    "descripcion": "Crear un espacio para desarrollar soluciones tecnológicas innovadoras que respondan a necesidades sociales y económicas.",
+    "fecha_inicio": "2026-04-01",
+    "ods": 9,
+    "organizaciones": [
+      8,
+      9
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 11,
+  "fields": {
+    "titulo": "Programa de inclusión social",
+    "descripcion": "Desarrollar actividades para reducir las desigualdades y facilitar el acceso equitativo a servicios y oportunidades.",
+    "fecha_inicio": "2026-04-05",
+    "ods": 10,
+    "organizaciones": [
+      3
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 12,
+  "fields": {
+    "titulo": "Plan de movilidad urbana sostenible",
+    "descripcion": "Fomentar el uso del transporte público, la bicicleta y los desplazamientos a pie para mejorar la sostenibilidad urbana.",
+    "fecha_inicio": "2026-04-10",
+    "ods": 11,
+    "organizaciones": [
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 13,
+  "fields": {
+    "titulo": "Campaña de consumo responsable",
+    "descripcion": "Sensibilizar a la ciudadanía sobre la reducción de residuos, la reutilización de productos y la compra responsable.",
+    "fecha_inicio": "2026-04-15",
+    "ods": 12,
+    "organizaciones": [
+      8
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 14,
+  "fields": {
+    "titulo": "Proyecto de reducción de emisiones de carbono",
+    "descripcion": "Promover medidas para reducir las emisiones de gases de efecto invernadero mediante hábitos sostenibles y eficiencia energética.",
+    "fecha_inicio": "2026-05-01",
+    "ods": 13,
+    "organizaciones": [
+      5,
+      9
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 15,
+  "fields": {
+    "titulo": "Jornada de limpieza de playas",
+    "descripcion": "Organizar jornadas de recogida de residuos en playas y zonas costeras para proteger los océanos y la biodiversidad marina.",
+    "fecha_inicio": "2026-05-05",
+    "ods": 14,
+    "organizaciones": [
+      5
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 16,
+  "fields": {
+    "titulo": "Programa de mediación y resolución pacífica de conflictos",
+    "descripcion": "Impulsar la mediación, el diálogo y la educación para la paz con el fin de prevenir conflictos en la comunidad.",
+    "fecha_inicio": "2026-05-10",
+    "ods": 16,
+    "organizaciones": [
+      9
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 17,
+  "fields": {
+    "titulo": "Red de colaboración entre asociaciones locales",
+    "descripcion": "Establecer alianzas entre asociaciones, empresas e instituciones para desarrollar proyectos conjuntos de desarrollo sostenible.",
+    "fecha_inicio": "2026-05-15",
+    "ods": 17,
+    "organizaciones": [
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 18,
+  "fields": {
+    "titulo": "Comedor social para personas necesitadas",
+    "descripcion": "Proporcionar comidas nutritivas a personas con dificultades económicas y favorecer su inclusión social.",
+    "fecha_inicio": "2026-06-01",
+    "ods": 3,
+    "organizaciones": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 19,
+  "fields": {
+    "titulo": "Becas para estudiantes con pocos recursos",
+    "descripcion": "Conceder ayudas económicas para facilitar el acceso a materiales escolares y reducir el abandono educativo.",
+    "fecha_inicio": "2026-06-05",
+    "ods": 1,
+    "organizaciones": [
+      2,
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 20,
+  "fields": {
+    "titulo": "Formación digital para personas mayores",
+    "descripcion": "Ofrecer cursos gratuitos de competencias digitales para mejorar la autonomía y reducir la brecha tecnológica.",
+    "fecha_inicio": "2026-06-10",
+    "ods": 10,
+    "organizaciones": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "campus.iniciativa",
+  "pk": 21,
+  "fields": {
+    "titulo": "Huertos urbanos comunitarios",
+    "descripcion": "Crear huertos compartidos para fomentar la producción local de alimentos, la educación ambiental y la participación vecinal.",
+    "fecha_inicio": "2026-06-15",
+    "ods": 11,
+    "organizaciones": [
+      6,
+      5,
+      10
+    ]
+  }
+}
+]
