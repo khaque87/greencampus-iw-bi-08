@@ -1,0 +1,24 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}Portada{% endblock %}
+
+{% block encabezado %}Iniciativas Destacadas por ODS{% endblock %}
+
+{% block cuerpo %}
+<div class="tarjetas-grid">
+  {% for iniciativa in destacadas %}
+    <article class="tarjeta">
+      <h2>ODS {{ iniciativa.ods.numero }}: {{ iniciativa.ods.nombre }}</h2>
+      <h3>
+        <a href="{% url 'campus:iniciativa_detail' iniciativa.pk %}">
+          {{ iniciativa.titulo }}
+        </a>
+      </h3>
+      <p><strong>Fecha de inicio:</strong> {{ iniciativa.fecha_inicio|date:"j \d\e F \d\e Y" }}</p>
+      <p>{{ iniciativa.descripcion|truncatewords:25 }}</p>
+    </article>
+  {% empty %}
+    <p>No hay iniciativas destacadas disponibles en este momento.</p>
+  {% endfor %}
+</div>
+{% endblock %}

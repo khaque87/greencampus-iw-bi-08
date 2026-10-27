@@ -1,0 +1,39 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}{{ iniciativa.titulo }}{% endblock %}
+
+{% block encabezado %}{{ iniciativa.titulo }}{% endblock %}
+
+{% block cuerpo %}
+<div class="detalle-iniciativa">
+  <p><strong>Fecha de inicio:</strong> {{ iniciativa.fecha_inicio|date:"j \d\e F \d\e Y" }}</p>
+
+  <p>
+    <strong>ODS Principal:</strong> 
+    <a href="{% url 'campus:ods_detail' iniciativa.ods.pk %}">
+      ODS {{ iniciativa.ods.numero }}. {{ iniciativa.ods.nombre }}
+    </a>
+  </p>
+
+  <div>
+    <h2>Descripción</h2>
+    <p>{{ iniciativa.descripcion }}</p>
+  </div>
+
+  <div>
+    <h2>Organizaciones Promotoras</h2>
+    <ul>
+      {% for org in iniciativa.organizaciones.all %}
+        <li>
+          <a href="{% url 'campus:organizacion_detail' org.pk %}">
+            {{ org.nombre }}
+          </a> 
+          ({{ org.get_tipo_display }})
+        </li>
+      {% empty %}
+        <li>Esta iniciativa no cuenta con organizaciones asociadas registradas.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

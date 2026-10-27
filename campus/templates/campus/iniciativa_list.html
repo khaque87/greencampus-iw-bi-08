@@ -1,0 +1,21 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}Lista de Iniciativas{% endblock %}
+
+{% block encabezado %}Todas las Iniciativas{% endblock %}
+
+{% block cuerpo %}
+<ul class="lista-iniciativas">
+  {% for iniciativa in iniciativa_list %}
+    <li>
+      <a href="{% url 'campus:iniciativa_detail' iniciativa.pk %}">
+        <strong>{{ iniciativa.titulo }}</strong>
+      </a> 
+      (ODS {{ iniciativa.ods.numero }}: {{ iniciativa.ods.nombre }}) - 
+      <span>{{ iniciativa.fecha_inicio|date:"d/m/Y" }}</span>
+    </li>
+  {% empty %}
+    <li>No hay ninguna iniciativa registrada.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
