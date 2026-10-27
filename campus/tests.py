@@ -15,7 +15,7 @@ class IniciativaYPortadaTests(TestCase):
         )
         self.org_univ = Organizacion.objects.create(
             nombre="Universidad de Deusto", 
-            tipo="UNI", 
+            tipo="UNIVERSIDAD", 
             descripcion="Universidad"
         )
 
