@@ -40,7 +40,14 @@ python manage.py migrate
 python -X utf8 manage.py loaddata datos.json
 ```
 
-**6. Ejecutar el servidor local:**
+**6. Crear el usuario administrador (Superuser):**
+
+```bash
+python manage.py createsuperuser
+```
+
+
+**7. Ejecutar el servidor local:**
 
 ```bash
 python manage.py runserver
