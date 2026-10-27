@@ -1,0 +1,24 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}{{ organizacion.nombre }}{% endblock %}
+
+{% block encabezado %}{{ organizacion.nombre }}{% endblock %}
+
+{% block cuerpo %}
+<p><strong>Tipo:</strong> {{ organizacion.get_tipo_display }}</p>
+{{ organizacion.descripcion|linebreaks }}
+{% if organizacion.web %}
+<p><a href="{{ organizacion.web }}">Web de {{ organizacion.nombre }}</a></p>
+{% endif %}
+
+<h2>Iniciativas que promueve</h2>
+<ul>
+    {% for iniciativa in organizacion.iniciativas.all %}
+    <li><a href="{% url 'campus:iniciativa_detail' iniciativa.pk %}">{{ iniciativa.titulo }}</a></li>
+    {% empty %}
+    <li>Esta organización todavía no promueve ninguna iniciativa.</li>
+    {% endfor %}
+</ul>
+
+<p><a href="{% url 'campus:organizacion_list' %}">Volver a organizaciones</a></p>
+{% endblock %}

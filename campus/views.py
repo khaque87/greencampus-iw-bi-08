@@ -1,4 +1,6 @@
-from django.views.generic import TemplateView
+from django.views.generic import DetailView, ListView, TemplateView
+
+from .models import ODS, Iniciativa, Organizacion
 
 
 # Vistas provisionales del esqueleto: cada dueño sustituye la suya
@@ -27,9 +29,9 @@ class ODSDetailView(EnConstruccion):
     pass
 
 
-class OrganizacionListView(EnConstruccion):
-    pass
+class OrganizacionListView(ListView):
+    model = Organizacion
 
 
-class OrganizacionDetailView(EnConstruccion):
-    pass
+class OrganizacionDetailView(DetailView):
+    model = Organizacion
