@@ -1,0 +1,18 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}Organizaciones{% endblock %}
+
+{% block encabezado %}Organizaciones{% endblock %}
+
+{% block cuerpo %}
+<div class="grid-tarjetas">
+    {% for organizacion in organizacion_list %}
+    <article class="tarjeta">
+        <h2><a href="{% url 'campus:organizacion_detail' organizacion.pk %}">{{ organizacion.nombre }}</a></h2>
+        <p>{{ organizacion.get_tipo_display }}</p>
+    </article>
+    {% empty %}
+    <p class="mensaje-vacio">Todavía no hay organizaciones.</p>
+    {% endfor %}
+</div>
+{% endblock %}
