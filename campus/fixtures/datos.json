@@ -4,8 +4,8 @@
   "pk": 1,
   "fields": {
     "numero": 4,
-    "nombre": "Educacion de calidad",
-    "descripcion": "Garantizar educacion de calidad"
+    "nombre": "Educación de calidad",
+    "descripcion": "Garantizar educación de calidad"
   }
 },
 {
@@ -275,8 +275,7 @@
     "fecha_inicio": "2026-01-15",
     "ods": 2,
     "organizaciones": [
-      6,
-      7
+      6
     ]
   }
 },
