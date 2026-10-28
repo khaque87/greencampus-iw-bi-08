@@ -36,12 +36,12 @@ class IniciativaDetailView(DetailView):
     context_object_name = "iniciativa"
 
 
-class ODSListView(EnConstruccion):
-    pass
+class ODSListView(ListView):
+    model = ODS
 
 
-class ODSDetailView(EnConstruccion):
-    pass
+class ODSDetailView(DetailView):
+    model = ODS
 
 
 class OrganizacionListView(ListView):
