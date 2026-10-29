@@ -113,4 +113,14 @@ Asistencia IA (Apoyo puntual): Utilicé la IA como diccionario técnico para con
 
 Implementación Técnica:
 
-Kazi implementó las vistas `OrganizacionListView` y `OrganizacionDetailView`. Además, se encargó de la coordinación del repositorio (rama `main`), de la configuración base del proyecto (`settings.py` y `urls.py`) y de la creación del empaquetado ZIP final, comprobado en limpio.
+Kazi se encargó de la sección de organizaciones (vistas `OrganizacionListView` y `OrganizacionDetailView`, con sus plantillas y pruebas), de la coordinación del repositorio y de la integración de las ramas en `main`, así como de la configuración base del proyecto (`settings.py` y `urls.py`).
+
+Registro de uso de IA:
+
+He utilizado Claude (Anthropic) como asistente en tres ámbitos:
+
+- **Planificación y estructura inicial:** elaboró el plan de trabajo y el reparto de tareas, y generó el esqueleto inicial de la aplicación.
+- **Desarrollo:** generó el código de la sección de organizaciones.
+- **Revisión e integración:** me ayudó a revisar las contribuciones del grupo y a resolver conflictos entre ramas.
+
+Por mi parte, coordiné el reparto de tareas, creé el repositorio, ejecuté el proyecto y las pruebas en local y gestioné la integración en `main`.
