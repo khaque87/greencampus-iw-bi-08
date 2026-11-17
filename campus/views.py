@@ -16,7 +16,7 @@ class PortadaView(TemplateView):
         context = super().get_context_data(**kwargs)
         destacadas = []
         for ods in ODS.objects.all():
-            ultima = Iniciativa.objects.filter(ods=ods).order_by("-fecha_inicio").first()
+            ultima = ods.iniciativas.order_by("-fecha_inicio").first()
             if ultima:
                 destacadas.append(ultima)
         context["destacadas"] = destacadas

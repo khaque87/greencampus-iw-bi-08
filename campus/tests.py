@@ -23,7 +23,7 @@ class IniciativaYPortadaTests(TestCase):
         respuesta = self.client.get(reverse("campus:iniciativa_detail", args=[9999]))
         self.assertEqual(respuesta.status_code, 404)
 
-    def test_portada_muestra_la_mas_reciente_de_cada_ods(self):
+    def test_portada_muestra_la_mas_reciente_de_cada_ods_y_enlace(self):
         antigua = Iniciativa.objects.create(
             titulo="Antigua", 
             descripcion="...", 
@@ -38,6 +38,21 @@ class IniciativaYPortadaTests(TestCase):
         )
         respuesta = self.client.get(reverse("campus:portada"))
         self.assertEqual(respuesta.context["destacadas"], [nueva])
+        url_ods = reverse("campus:ods_detail", args=[self.ods_clima.pk])
+        self.assertContains(respuesta, f'href="{url_ods}"')
+
+    def test_lista_iniciativas_muestra_iniciativas_y_enlace_ods(self):
+        iniciativa = Iniciativa.objects.create(
+            titulo="Huertos Urbanos", 
+            descripcion="...", 
+            fecha_inicio=date(2026, 5, 1), 
+            ods=self.ods_clima
+        )
+        respuesta = self.client.get(reverse("campus:iniciativa_list"))
+        self.assertEqual(respuesta.status_code, 200)
+        self.assertContains(respuesta, "Huertos Urbanos")
+        url_ods = reverse("campus:ods_detail", args=[self.ods_clima.pk])
+        self.assertContains(respuesta, f'href="{url_ods}"')
 
     def test_detalle_iniciativa_muestra_ods_y_organizaciones(self):
         iniciativa = Iniciativa.objects.create(

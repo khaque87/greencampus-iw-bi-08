@@ -8,7 +8,11 @@
 <div class="tarjetas-grid">
   {% for iniciativa in destacadas %}
     <article class="tarjeta">
-      <h2>ODS {{ iniciativa.ods.numero }}: {{ iniciativa.ods.nombre }}</h2>
+      <h2>
+        <a href="{% url 'campus:ods_detail' iniciativa.ods.pk %}">
+          ODS {{ iniciativa.ods.numero }}: {{ iniciativa.ods.nombre }}
+        </a>
+      </h2>
       <h3>
         <a href="{% url 'campus:iniciativa_detail' iniciativa.pk %}">
           {{ iniciativa.titulo }}
