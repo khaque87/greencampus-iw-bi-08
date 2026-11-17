@@ -11,7 +11,7 @@
       <a href="{% url 'campus:iniciativa_detail' iniciativa.pk %}">
         <strong>{{ iniciativa.titulo }}</strong>
       </a> 
-      (ODS {{ iniciativa.ods.numero }}: {{ iniciativa.ods.nombre }}) - 
+      (<a href="{% url 'campus:ods_detail' iniciativa.ods.pk %}">ODS {{ iniciativa.ods.numero }}: {{ iniciativa.ods.nombre }}</a>) -
       <span>{{ iniciativa.fecha_inicio|date:"d/m/Y" }}</span>
     </li>
   {% empty %}
