@@ -1,0 +1,14 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}Iniciativa registrada{% endblock %}
+{% block encabezado %}¡Iniciativa registrada!{% endblock %}
+
+{% block cuerpo %}
+<div class="tarjeta">
+  <p>La iniciativa se ha guardado correctamente.</p>
+  <p>
+    <a href="{% url 'campus:crear_iniciativa' %}" class="boton">Proponer otra iniciativa</a>
+    <a href="{% url 'campus:iniciativa_list' %}" class="boton boton-secundario">Ver todas las iniciativas</a>
+  </p>
+</div>
+{% endblock %}

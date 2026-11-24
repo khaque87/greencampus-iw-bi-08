@@ -1,0 +1,14 @@
+{% extends "campus/seccion.html" %}
+
+{% block titulo %}Proponer iniciativa{% endblock %}
+{% block encabezado %}Proponer una iniciativa{% endblock %}
+
+{% block cuerpo %}
+<div class="tarjeta formulario">
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="boton">Enviar iniciativa</button>
+  </form>
+</div>
+{% endblock %}

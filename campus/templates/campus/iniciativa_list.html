@@ -5,6 +5,7 @@
 {% block encabezado %}Todas las Iniciativas{% endblock %}
 
 {% block cuerpo %}
+<p><a href="{% url 'campus:crear_iniciativa' %}">+ Proponer una nueva iniciativa</a></p>
 <ul class="lista-iniciativas">
   {% for iniciativa in iniciativa_list %}
     <li>
