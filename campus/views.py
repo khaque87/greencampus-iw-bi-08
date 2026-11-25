@@ -1,5 +1,6 @@
 from django.views.generic import DetailView, ListView, TemplateView
-
+from django.shortcuts import render, redirect
+from .forms import IniciativaForm
 from .models import ODS, Iniciativa, Organizacion
 
 
@@ -50,3 +51,23 @@ class OrganizacionListView(ListView):
 
 class OrganizacionDetailView(DetailView):
     model = Organizacion
+
+
+def crear_iniciativa(request):
+    if request.method == "POST":
+        form = IniciativaForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return redirect("campus:iniciativa_creada")
+
+    else:
+        form = IniciativaForm()
+
+    return render(request, "campus/crear_iniciativa.html", {
+        "form": form
+    })
+
+
+def iniciativa_creada(request):
+    return render(request, "campus/iniciativa_creada.html")

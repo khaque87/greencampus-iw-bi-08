@@ -11,4 +11,6 @@ urlpatterns = [
     path("ods/<int:pk>/", views.ODSDetailView.as_view(), name="ods_detail"),
     path("organizaciones/", views.OrganizacionListView.as_view(), name="organizacion_list"),
     path("organizaciones/<int:pk>/", views.OrganizacionDetailView.as_view(), name="organizacion_detail"),
+    path("iniciativas/nueva/", views.crear_iniciativa, name="crear_iniciativa"),
+    path("iniciativas/creada/", views.iniciativa_creada, name="iniciativa_creada")
 ]
